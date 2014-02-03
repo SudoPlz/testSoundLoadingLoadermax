@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tale id="1">
+    <page id="1">
+        <LoaderMax name="ft$1:page$1" autoLoad="true">
+            <MP3Loader name="ft$1:page$1:mc$1:always" url="page_1/backsound.mp3" estimatedBytes="2050" autoPlay="false" />
+            <MP3Loader name="ft$1:page$1:mc$1:onClick" url="page_1/click.mp3" estimatedBytes="2050" autoPlay="false" />
+        </LoaderMax>
+    </page>
+    <page id="2"></page>
+    <page id="3"></page>
+    <page id="4"></page>
+    <page id="5"></page>
+    <name>blabla </name>
+    <pageCnt>20</pageCnt>
+    <url>52ea219a465c0d0b1e0c0abb</url>
+</tale>

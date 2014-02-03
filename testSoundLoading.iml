@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="testSoundLoading">
+    <configurations>
+      <configuration name="testSoundLoading" target-platform="Mobile" pure-as="true" main-class="TestSoundLoading" output-file="TestSoundLoading.swf" output-folder="$MODULE_DIR$/out/production/testSoundLoading">
+        <dependencies target-player="12.0">
+          <entries>
+            <entry library-id="519c0738-641b-4250-bef7-ac5fdeb6b2db">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="Air_4.0_Compiler" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android enabled="true" package-file-name="TestSoundLoading">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets" path-in-package="assets" />
+          </files-to-package>
+        </packaging-android>
+        <packaging-ios enabled="true" package-file-name="TestSoundLoading">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets" path-in-package="assets" />
+          </files-to-package>
+          <AirSigningOptions sdk="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk" keystore-path="$USER_HOME$/Documents/Certificates/MyP12.p12" provisioning-profile-path="$USER_HOME$/Documents/Certificates/Generic/Generic * .mobileprovision" />
+        </packaging-ios>
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Air_4.0_Compiler" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="519c0738-641b-4250-bef7-ac5fdeb6b2db" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/greensock.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+
