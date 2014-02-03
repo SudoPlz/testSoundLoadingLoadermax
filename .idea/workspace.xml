@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae1ba739-6f94-4806-bc11-758532c25703" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DirectoryManager.as" afterPath="$PROJECT_DIR$/src/DirectoryManager.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestSoundLoading.as" afterPath="$PROJECT_DIR$/src/TestSoundLoading.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testSoundLoading.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,9 +70,20 @@
       <file leaf-file-name="TestSoundLoading.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TestSoundLoading.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="82" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.61141306" vertical-offset="855" max-vertical-offset="1305">
+            <state line="33" column="79" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.69836956" vertical-offset="238" max-vertical-offset="1410">
               <folding>
                 <element signature="e#11#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirectoryManager.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DirectoryManager.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="27" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0" vertical-offset="427" max-vertical-offset="975">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -445,12 +455,12 @@
       <changelist id="ae1ba739-6f94-4806-bc11-758532c25703" name="Default" comment="" />
       <created>1391415187976</created>
       <updated>1391415187976</updated>
-      <workItem from="1391415192387" duration="1864000" />
+      <workItem from="1391415192387" duration="2146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1864000" />
+    <option name="totallyTimeSpent" value="2146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="701" extended-state="6" />
@@ -499,7 +509,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/TestSoundLoading.as</url>
-          <line>52</line>
+          <line>59</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -507,15 +517,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DirectoryManager.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="56" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1740">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/defaultTale/xmlprops.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="7" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
@@ -523,9 +524,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DirectoryManager.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="27" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="975">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestSoundLoading.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="82" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.61141306" vertical-offset="855" max-vertical-offset="1305">
+        <state line="33" column="79" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.69836956" vertical-offset="238" max-vertical-offset="1410">
           <folding>
             <element signature="e#11#51#0" expanded="true" />
           </folding>

@@ -6,7 +6,6 @@ import com.greensock.loading.MP3Loader;
 import com.greensock.loading.XMLLoader;
 
 import flash.display.Sprite;
-import flash.text.TextField;
 
 public class TestSoundLoading extends Sprite {
     private var curTaleDirectory:String;
@@ -14,6 +13,7 @@ public class TestSoundLoading extends Sprite {
     private var xmlLoader:XMLLoader;
     private var curTalePageCnt:uint;
     private var _taleId:int;
+    private var directoryManager:DirectoryManager;
     
 
     /*
@@ -30,15 +30,22 @@ public class TestSoundLoading extends Sprite {
     *       so that it copies the files to the phone.
     *
     *       2) Use it on a device or a simulator/emulator so that the files get transferred in it (I use iOs simulator)
+    *
+    *       3) Change the isIos variable..! (This is only for the current test project)
     * */
 
     public function TestSoundLoading() {
+
+        var isIOS:Boolean = true;
+
 
         _taleId = 1;
         //load the properties file for this tale
         loader = new LoaderMax({name:"tale$"+_taleId.toString()+"_props", autoDispose :true, onComplete:propsLoaded});
         LoaderMax.activate([MP3Loader]); //only necessary once - allows XMLLoader to recognize MP3Loader nodes inside the XML
-        curTaleDirectory = DirectoryManager.getInstance().getTalePathById(_taleId);
+
+        directoryManager = new DirectoryManager(isIOS);
+        curTaleDirectory = directoryManager.getTalePathById(_taleId);
         xmlLoader = new XMLLoader(curTaleDirectory + "xmlprops.xml", {name:"xmlprops_tale$"+_taleId.toString(),
 
             recursivePrependURLs:curTaleDirectory, //TODO: Using this line results in MP3Loader Error

@@ -15,12 +15,8 @@ public class DirectoryManager {
     public static const ANDROID_CACHE_DIR:String = "/FTCache";
 
     public static const TALES_PATH:String = "/tales/tale_";
-    public static const PAGES_PATH:String = "/page_";
     public static const DEFAULT_TALE_PATH:String = "assets/defaultTale";
 
-
-    //files
-    public static const PAGE_SOUND_FILENAME:String = "/pagesound";
 
     public static const DEFAULT_APP_FAIRYTALE:int = 1;
 
@@ -28,27 +24,20 @@ public class DirectoryManager {
     private var _isIos:Boolean;
     private var cacheDir:String;
 
-    public function DirectoryManager() {
+    public function DirectoryManager(isIos:Boolean = true) {
         if (!allowInstantiation) {
             throw new Error("Error: Instantiation failed: Use DirectoryManager.getInstance() instead of new.");
         }
+         _isIos = isIos;
     }
 
-    public static function getInstance():DirectoryManager {
-        if (instance == null) {
-            allowInstantiation = true;
-            instance = new DirectoryManager();
-            allowInstantiation = false;
-        }
-        return instance;
-    }
 
     public function getCacheDirectoryPath():String
     {
         if (!cacheDir)
         {
-            var str:String = (isIos ? File.applicationDirectory.nativePath : File.applicationStorageDirectory.nativePath);
-            var tempFile:File = new File(str + (isIos? IOS_CACHE_DIR: ANDROID_CACHE_DIR) );				//cache folder (in which you put files that you dont care being erased. the iOs might delete those files in case of low memory
+            var str:String = (_isIos ? File.applicationDirectory.nativePath : File.applicationStorageDirectory.nativePath);
+            var tempFile:File = new File(str + (_isIos? IOS_CACHE_DIR: ANDROID_CACHE_DIR) );				//cache folder (in which you put files that you dont care being erased. the iOs might delete those files in case of low memory
             cacheDir = tempFile.url;
         }
         return cacheDir;
@@ -67,45 +56,5 @@ public class DirectoryManager {
     }
 
 
-    public function getTaleDownloadedZipPath(taleId:uint):String
-    {
-        return (getCacheDirectoryPath() + TALES_PATH + taleId.toString() + "tale_"+ taleId.toString() + "_assets.zip");
-    }
-
-    public function sortDirectoryBasedOnFilename( fileName:String, taleId:uint):String
-    {
-
-        var filePath:String = TALES_PATH + taleId.toString();
-
-        var sorter:int = fileName.indexOf("_")
-        if ( sorter == -1 )	//if u cant find _ within the name then its a global tale file
-        {
-            filePath = "/"+fileName;
-        }
-        else
-        {
-            var fileNameParts:Array = fileName.split("_");
-            var pageId:String = ( fileNameParts[1] as String).slice(0,1);
-            filePath += PAGES_PATH + pageId;
-            var details:String = "";
-            try{
-                details = "_"+fileNameParts[2];
-            }catch (e:Error){}
-
-            var filenameEnding:String = PAGE_SOUND_FILENAME+details; //+".mp3";
-            filePath += filenameEnding;
-            filePath = filePath.substr(1); //this is to remove the / in front of the filepath
-        }
-        return filePath;
-    }
-
-
-    public function get isIos():Boolean {
-        return _isIos;
-    }
-
-    public function set isIos(value:Boolean):void {
-        _isIos = value;
-    }
 }
 }
