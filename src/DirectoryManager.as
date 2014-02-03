@@ -6,10 +6,6 @@ import flash.filesystem.File;
 
 public class DirectoryManager {
 
-    private static var instance:DirectoryManager;
-    private static var allowInstantiation:Boolean;
-
-
     //directories
     public static const IOS_CACHE_DIR:String = "/\.\./Library/Caches";
     public static const ANDROID_CACHE_DIR:String = "/FTCache";
@@ -25,9 +21,6 @@ public class DirectoryManager {
     private var cacheDir:String;
 
     public function DirectoryManager(isIos:Boolean = true) {
-        if (!allowInstantiation) {
-            throw new Error("Error: Instantiation failed: Use DirectoryManager.getInstance() instead of new.");
-        }
          _isIos = isIos;
     }
 

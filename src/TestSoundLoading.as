@@ -77,7 +77,7 @@ public class TestSoundLoading extends Sprite {
 
 
             //TODO: check the pageSoundsLoader.. is it full? is it empty?
-            trace(pageSoundsLoader); //usually this is filled with 2 empty sounds.
+            //trace(pageSoundsLoader); //usually this is filled with 2 empty sounds.
 
 
 
