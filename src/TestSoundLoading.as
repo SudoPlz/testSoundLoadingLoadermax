@@ -13,10 +13,7 @@ public class TestSoundLoading extends Sprite {
     private var loader:LoaderMax;
     private var xmlLoader:XMLLoader;
     private var curTalePageCnt:uint;
-    private var taleRealName:String;
-    private var remoteAssetUrl:String;
     private var _taleId:int;
-    private var curPageText:String;
     
 
     /*
@@ -55,22 +52,16 @@ public class TestSoundLoading extends Sprite {
         trace("XML Loaded")
         var objects:Array = e.currentTarget.content;
         var taleProps:XML = objects[0];     // This ONLY works on mobile devices..!
+
         try
         {
             //get the properties contained within the props file and store them in this object
             curTalePageCnt = taleProps.pageCnt;
-            taleRealName = taleProps.name;
-            remoteAssetUrl = taleProps.url;
-        }
-        catch (e:Error)
-        {
-//           throw new Error
-            trace("Page xml parse error: "+ e.message)
-        }
+        } catch (e:Error){trace("Page xml parse error: "+ e.message)}
+
         for (var pageId:uint=0;pageId<curTalePageCnt;pageId++) //for each page
         {
-            try{
-                curPageText = taleProps.page.(@id == (pageId+1)).taleText;   //get the page text
+            try{   //try getting our hands on the LoaderMax instance
                 var pageSoundsLoader:LoaderMax = loader.getLoader("ft$"+_taleId.toString()+":page$"+(pageId+1).toString()); //get the pages LoaderMax stored within the xml
             }catch (e:Error){
                 trace("Page xml parse error: "+ e.message + " on page: " + (pageId+1).toString());
@@ -79,7 +70,7 @@ public class TestSoundLoading extends Sprite {
 
 
             //TODO: check the pageSoundsLoader.. is it full? is it empty?
-            trace(pageSoundsLoader)
+            trace(pageSoundsLoader); //usually this is filled with 2 empty sounds.
 
 
 

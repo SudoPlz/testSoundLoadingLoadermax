@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae1ba739-6f94-4806-bc11-758532c25703" name="Default" comment="" />
+    <list default="true" id="ae1ba739-6f94-4806-bc11-758532c25703" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestSoundLoading.as" afterPath="$PROJECT_DIR$/src/TestSoundLoading.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="testSoundLoading.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +71,7 @@
       <file leaf-file-name="TestSoundLoading.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TestSoundLoading.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="89" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.6929348" vertical-offset="255" max-vertical-offset="1440">
+            <state line="72" column="82" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.61141306" vertical-offset="855" max-vertical-offset="1305">
               <folding>
                 <element signature="e#11#51#0" expanded="true" />
               </folding>
@@ -90,6 +94,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -438,22 +445,22 @@
       <changelist id="ae1ba739-6f94-4806-bc11-758532c25703" name="Default" comment="" />
       <created>1391415187976</created>
       <updated>1391415187976</updated>
-      <workItem from="1391415192387" duration="1481000" />
+      <workItem from="1391415192387" duration="1864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1481000" />
+    <option name="totallyTimeSpent" value="1864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="701" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32840723" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32840723" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39901477" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -492,7 +499,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/TestSoundLoading.as</url>
-          <line>55</line>
+          <line>52</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -518,7 +525,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestSoundLoading.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="89" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.6929348" vertical-offset="255" max-vertical-offset="1440">
+        <state line="72" column="82" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.61141306" vertical-offset="855" max-vertical-offset="1305">
           <folding>
             <element signature="e#11#51#0" expanded="true" />
           </folding>
